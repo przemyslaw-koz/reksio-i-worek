@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firma Wyburzeniowa Reksio i Worek</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>      <nav class="navbar">
+        <div class="logo">
+          <a href="#hero"
+            ><img src="images/logo-small.png" alt="Logo firmy"
+          /></a>
+        </div>
+        <div class="hamburger">&#9776;</div>
+        
+        <ul class="nav-links">
+          <li><a href="#about">O nas</a></li>
+          <li><a href="#services">Oferta</a></li>
+          <li><a href="#projects">Referencje i realizacje</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hero" class="hero">
+      <div class="hero-overlay"></div>
+      <img src="images/logo.png" alt="Logo firmy" class="hero-logo" />
+      <div class="hero-content">
+        <h1>Firma Wyburzeniowa Reksio i Worek</h1>
+        <p>Profesjonalizm, jakość i zaufanie – to nasza dewiza.</p>
+        <a href="#services" class="btn-primary">Zobacz ofertę</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about-container">
+        <div class="about-text">
+          <h2>O nas</h2>
+          <p>
+            Jesteśmy zespołem specjalistów z wieloletnim doświadczeniem w branży
+            usług wyburzeniowych. Stawiamy na indywidualne podejście,
+            terminowość i najwyższą jakość realizacji.
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="images/logo.png" alt="Logo firmy Reksio i Worek" />
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section bg-light">
+      <div class="container">
+        <h2>Oferta</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">🏗️</div>
+            <h3>Wyburzenia budynków</h3>
+            <p>
+              Kompleksowe wyburzenia dużych obiektów z pełnym zabezpieczeniem
+              terenu.
+            </p>
+            <span class="price">od 5000 zł</span>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🔨</div>
+            <h3>Prace rozbiórkowe</h3>
+            <p>Precyzyjne rozbiórki ścian i konstrukcji wewnętrznych.</p>
+            <span class="price">od 1000 zł</span>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🚚</div>
+            <h3>Wywóz gruzu</h3>
+            <p>Profesjonalny transport i utylizacja gruzu budowlanego.</p>
+            <span class="price">od 500 zł</span>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🐔</div>
+            <h3>Wyburzenia kurników i szop na działkach</h3>
+            <p>
+              Kompleksowe wyburzanie kurników, szop i innych zabudowań
+              gospodarczych na działkach, zarówno ROD jak i prywatnych.
+            </p>
+            <span class="price">od 1000 zł</span>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">♻️</div>
+            <h3>Utylizacja azbestu</h3>
+            <p>
+              Profesjonalne usuwanie, transport i utylizacja azbestu, pokryć
+              azbestowych i eternitu.
+            </p>
+            <span class="price">od 1000 zł</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Referencje i realizacje</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img src="images/hagrid.png" alt="Wyburzenie chatki Hagrida" />
+            <p>
+              Wyburzenie chatki Hagrida, która była ustawiona na terenie Szkoły
+              Magii i Czarodziejstwa Hogwart nielegalnie i z pogwałceniem
+              wszystkich procedur - realizacja wykonana bezpiecznie i w
+              terminie.
+            </p>
+          </div>
+          <div class="project-card">
+            <img
+              src="images/palac.png"
+              alt="Rozbiórka Pałacu Kultury i Nauki w Warszawie"
+            />
+            <p>
+              Rozbiórka stojącego w centrum miasta stołecznego Warszawa Pałacu
+              Kultury i Nauki wraz z przyległym parkiem rzeźb znanego
+              rzeźbiarza.
+            </p>
+          </div>
+          <div class="project-card">
+            <img src="images/wyburzenie.png" alt="Prace rozbiórkowe" />
+            <p>Rozbiórka 10-piętrowego biurowca w centrum miasta.</p>
+          </div>
+          <div class="project-card">
+            <img
+              src="images/autostrada.png"
+              alt="Prace rozbiórkowe przy autostradzie"
+            />
+            <p>
+              Rozbiórka i usunięcie pozostałości asfaltu przy likwidacji
+              autostrady.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+      <span class="close">&times;</span>
+      <span class="prev">&#10094;</span>
+      <img class="lightbox-content" id="lightbox-img" />
+      <span class="next">&#10095;</span>
+    </div>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container contact-container">
+        <h2>Kontakt</h2>
+        <form class="contact-form">
+          <input type="text" placeholder="Imię i nazwisko" required />
+          <input type="email" placeholder="Adres e-mail" required />
+          <textarea placeholder="Twoja wiadomość" rows="5" required></textarea>
+          <button type="submit" class="btn-primary">Wyślij</button>
+        </form>
+        <div class="contact-info">
+          <p><strong>Email:</strong> kontakt@firma.pl</p>
+          <p><strong>Telefon:</strong> +48 123 456 789</p>
+          <p><strong>Adres:</strong> Ul. Przykładowa 12, 00-000 Miasto</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2025 Firma Wyburzeniowa Reksio i Worek. Wszelkie prawa
+        zastrzeżone.
+      </p>
+    </footer>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+    <script>
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      const closeBtn = document.querySelector(".lightbox .close");
+      const prevBtn = document.querySelector(".lightbox .prev");
+      const nextBtn = document.querySelector(".lightbox .next");
+
+      const images = Array.from(document.querySelectorAll(".project-card img"));
+      let currentIndex = 0;
+
+      function showImage(index) {
+        currentIndex = index;
+        lightboxImg.src = images[currentIndex].src;
+        lightbox.style.display = "flex";
+      }
+
+      images.forEach((img, index) => {
+        img.addEventListener("click", () => showImage(index));
+      });
+
+      closeBtn.addEventListener("click", () => {
+        lightbox.style.display = "none";
+      });
+
+      prevBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        lightboxImg.src = images[currentIndex].src;
+      });
+
+      nextBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        lightboxImg.src = images[currentIndex].src;
+      });
+
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) lightbox.style.display = "none";
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (lightbox.style.display === "flex") {
+          if (e.key === "ArrowLeft") prevBtn.click();
+          if (e.key === "ArrowRight") nextBtn.click();
+          if (e.key === "Escape") lightbox.style.display = "none";
+        }
+      });
+    </script>
+    <script>
+      // Hamburger menu toggle
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("active");
+        });
+      });
+    </script>
+    <script>
+      const sections = document.querySelectorAll("section");
+      let currentSectionIndex = 0;
+    
+      function scrollToSection(index) {
+        if (index >= 0 && index < sections.length) {
+          currentSectionIndex = index;
+          sections[currentSectionIndex].scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    
+      window.addEventListener("scroll", () => {
+        let fromTop = window.scrollY + window.innerHeight / 2;
+        sections.forEach((section, index) => {
+          if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+            currentSectionIndex = index;
+          }
+        });
+      });
+    
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowDown") {
+          e.preventDefault();
+          scrollToSection(currentSectionIndex + 1);
+        }
+        if (e.key === "ArrowUp") {
+          e.preventDefault();
+          scrollToSection(currentSectionIndex - 1);
+        }
+      });
+    </script>
+  </body>
+</html>
